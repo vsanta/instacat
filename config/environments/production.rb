@@ -85,6 +85,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.google_client_id = ""
-  config.google_secret = ""
+  config.google_client_id = ENV["GOOGLE_CLIENT_ID"]
+  config.google_secret = ENV["GOOGLE_SECRET"]
 end
