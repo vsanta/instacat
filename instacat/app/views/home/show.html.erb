@@ -1,2 +1,7 @@
 <h1>Welcome to Instacat</h1>
 <p>Here you can upload pictures of your cats and share with many other cat lovers!</p>
+<% if current_user %>
+  <%= link_to "Post a cat picture!", new_post_path, class: "btn btn-primary btn-lg"%>
+
+<%else%>
+<%end%>

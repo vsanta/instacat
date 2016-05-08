@@ -1,0 +1,8 @@
+<h1>Show your the World how cute your cat is!</h1>
+<%= form_for @post do |f| %>
+  <%= f.label :content %>:
+  <%= f.text_field :content %><br />
+  <%= f.label :cat_photo %>:
+  <%= f.file_field :cat_photo %>
+  <%= f.submit class: "btn btn-primary"%>
+<% end %>
